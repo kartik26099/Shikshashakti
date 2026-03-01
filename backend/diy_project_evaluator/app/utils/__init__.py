@@ -1,1 +1,0 @@
-# Utils package for DIY Project Evaluator 
