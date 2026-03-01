@@ -1,0 +1,54 @@
+# Main Backend Environment Configuration Template
+# Copy this to .env in the backend directory
+
+# AI Advisor Service
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+
+# Faculty Service  
+GROQ_API_KEY=your_groq_api_key_here
+
+# AI Research Helper Service
+GEMINI_API_KEY=your_gemini_api_key_here
+SCRAPINGDOG_API_KEY=your_scrapingdog_api_key_here
+
+# AI Library Service - Primary API
+Scholarly_api=your_scholarly_api_key_here
+
+# AI Library Service - Alternative APIs (for when primary API reaches limits)
+SCRAPINGDOG_BACKUP_KEY=your_backup_scrapingdog_key_here
+SERPAPI_KEY=your_serpapi_key_here
+RAPIDAPI_KEY=your_rapidapi_key_here
+
+# AI Library Service - Configuration
+CACHE_DURATION=3600
+CACHE_ENABLED=true
+FALLBACK_ENABLED=true
+RATE_LIMIT_DELAY=1.0
+REQUEST_TIMEOUT=15
+
+# AI Course Service
+gemini_api_key_research=your_gemini_api_key_here
+gemini_api_key_road_map=your_gemini_api_key_here
+
+# DIY Project Evaluator Service
+LLM_API_URL=https://openrouter.ai/api/v1/chat/completions
+LLM_API_KEY=your_openrouter_api_key_here
+MODEL_NAME=meta-llama/llama-3.1-8b-instruct:free
+
+# Server Ports (Optional - defaults will be used if not set)
+PORT_AI_ADVISOR=5274
+PORT_FACULTY=5000
+PORT_RESEARCH_HELPER=5005
+PORT_AI_LIBRARY=4001
+PORT_AI_PLACEMENT=5001
+PORT_DIY_EVALUATOR=8000
+PORT_AI_COURSE=5002
+PORT_DIY_SCHEDULER=5003
+PORT_AI_DIY=5004
+
+# File Upload Configuration
+MAX_FILE_SIZE=50MB
+UPLOAD_DIR=uploads
+
+# CORS Configuration
+ALLOWED_ORIGINS=http://localhost:3001,http://127.0.0.1:3001 

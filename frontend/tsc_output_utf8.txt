@@ -1,0 +1,61 @@
+﻿.next/types/validator.ts(233,39): error TS2306: File 'D:/coding journey/hacks/amd/frontend/app/test-translate/page.tsx' is not a module.
+.next/types/validator.ts(242,39): error TS2306: File 'D:/coding journey/hacks/amd/frontend/app/voice-demo/page.tsx' is not a module.
+.next/types/validator.ts(270,31): error TS2344: Type 'typeof import("D:/coding journey/hacks/amd/frontend/app/api/collab/chat/[teamId]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/collab/chat/[teamId]">'.
+  Types of property 'GET' are incompatible.
+    Type '(request: NextRequest, { params }: { params: { teamId: string; }; }) => Promise<NextResponse<{ error: string; }> | NextResponse<{ messages: any[]; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ teamId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ teamId: string; }>; }' is not assignable to type '{ params: { teamId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'teamId' is missing in type 'Promise<{ teamId: string; }>' but required in type '{ teamId: string; }'.
+.next/types/validator.ts(306,31): error TS2344: Type 'typeof import("D:/coding journey/hacks/amd/frontend/app/api/collab/teams/[teamId]/chat/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/collab/teams/[teamId]/chat">'.
+  Types of property 'GET' are incompatible.
+    Type '(request: NextRequest, { params }: { params: { teamId: string; }; }) => Promise<NextResponse<{ error: string; }> | NextResponse<{ messages: any[]; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ teamId: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ teamId: string; }>; }' is not assignable to type '{ params: { teamId: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'teamId' is missing in type 'Promise<{ teamId: string; }>' but required in type '{ teamId: string; }'.
+app/ai-placement/page.tsx(8,10): error TS2614: Module '"@/hooks/use-toast"' has no exported member 'useToast'. Did you mean to use 'import useToast from "@/hooks/use-toast"' instead?
+app/api/auth/user/route.ts(7,13): error TS2339: Property 'userId' does not exist on type 'Promise<SessionAuthWithRedirect<never>>'.
+app/api/collab/find-collaborator/route.ts(59,78): error TS7006: Parameter 's' implicitly has an 'any' type.
+app/api/collab/find-collaborator/route.ts(64,73): error TS7006: Parameter 's' implicitly has an 'any' type.
+app/api/collab/find-collaborator/route.ts(67,55): error TS7006: Parameter 'skill' implicitly has an 'any' type.
+app/api/collab/find-collaborator/route.ts(68,28): error TS7006: Parameter 'profileSkill' implicitly has an 'any' type.
+app/api/comments/route.ts(7,13): error TS2339: Property 'userId' does not exist on type 'Promise<SessionAuthWithRedirect<never>>'.
+app/community/[postId]/page.tsx(57,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
+app/community/[postId]/page.tsx(93,33): error TS2339: Property 'username' does not exist on type '{ username: any; avatar_url: any; }[]'.
+app/community/[postId]/page.tsx(94,35): error TS2339: Property 'avatar_url' does not exist on type '{ username: any; avatar_url: any; }[]'.
+app/community/new/page.tsx(80,46): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: { name: string; }[], options?: { onConflict?: string | undefined; ignoreDuplicates?: boolean | undefined; count?: "exact" | "planned" | "estimated" | undefined; } | undefined): PostgrestFilterBuilder<...>', gave the following error.
+    Type 'string[]' is not assignable to type 'string'.
+  Overload 2 of 2, '(values: { name: string; }[], options?: { onConflict?: string | undefined; ignoreDuplicates?: boolean | undefined; count?: "exact" | "planned" | "estimated" | undefined; defaultToNull?: boolean | undefined; } | undefined): PostgrestFilterBuilder<...>', gave the following error.
+    Type 'string[]' is not assignable to type 'string'.
+app/community/page.tsx(234,26): error TS2322: Type 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+app/community/page.tsx(416,11): error TS2322: Type '{ isOpen: boolean; onClose: () => void; onSubmit: (reason: string) => Promise<void>; }' is not assignable to type 'IntrinsicAttributes & ReportModalProps'.
+  Property 'isOpen' does not exist on type 'IntrinsicAttributes & ReportModalProps'. Did you mean 'open'?
+app/community/page.tsx(421,11): error TS2322: Type '{ isOpen: boolean; onClose: () => void; }' is not assignable to type 'IntrinsicAttributes & CommunityGuidelinesProps'.
+  Property 'isOpen' does not exist on type 'IntrinsicAttributes & CommunityGuidelinesProps'. Did you mean 'open'?
+app/page.tsx(340,15): error TS2322: Type 'AutoplayType' is not assignable to type 'CreatePluginType<LoosePluginType, {}>'.
+  Type 'AutoplayType' is not assignable to type '{ name: string; options: Partial<{ active: boolean; breakpoints: { [key: string]: Omit<Partial<...>, "breakpoints">; }; }>; init: (embla: EmblaCarouselType, OptionsHandler: OptionsHandlerType) => void; destroy: () => void; }'.
+    Types of property 'init' are incompatible.
+      Type '(embla: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType, OptionsHandler: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/OptionsHandler").OptionsHandlerType) => void' is not assignable to type '(embla: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType, OptionsHandler: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/OptionsHandler...'.
+        Types of parameters 'embla' and 'embla' are incompatible.
+          Type 'import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType' is not assignable to type 'import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType'.
+            The types of 'internalEngine().eventHandler.init' are incompatible between these types.
+              Type '(emblaApi: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType) => void' is not assignable to type '(emblaApi: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType) => void'.
+                Types of parameters 'emblaApi' and 'emblaApi' are incompatible.
+                  Type 'import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType' is not assignable to type 'import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/EmblaCarousel").EmblaCarouselType'.
+                    The types of 'internalEngine().eventHandler.on' are incompatible between these types.
+                      Type '(evt: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/EventHandler").EmblaEventType, cb: CallbackType) => import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/EventHandler").EventHandlerType' is not assignable to type '(evt: import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/EventHandler").EmblaEventType, cb: CallbackType) => import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/EventHandler")....'.
+                        Types of parameters 'cb' and 'cb' are incompatible.
+                          Types of parameters 'evt' and 'evt' are incompatible.
+                            Type 'import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel/esm/components/EventHandler").EmblaEventType' is not assignable to type 'import("D:/coding journey/hacks/amd/frontend/node_modules/embla-carousel-react/node_modules/embla-carousel/esm/components/EventHandler").EmblaEventType'.
+                              Type '"autoplay:play"' is not assignable to type 'EmblaEventType'.
+components/error-boundary.tsx(26,5): error TS2741: Property 'isRecovering' is missing in type '{ hasError: true; error: Error; }' but required in type 'State'.
+components/ProjectTimeline.tsx(9,31): error TS2503: Cannot find namespace 'JSX'.
+components/voice-assistant.tsx(15,5): error TS2717: Subsequent property declarations must have the same type.  Property 'webkitSpeechRecognition' must be of type '{ new (): SpeechRecognition; prototype: SpeechRecognition; }', but here has type 'any'.
+components/voice-assistant.tsx(16,5): error TS2717: Subsequent property declarations must have the same type.  Property 'SpeechRecognition' must be of type '{ new (): SpeechRecognition; prototype: SpeechRecognition; }', but here has type 'any'.
+hooks/use-voice-commands.tsx(9,5): error TS2717: Subsequent property declarations must have the same type.  Property 'webkitSpeechRecognition' must be of type '{ new (): SpeechRecognition; prototype: SpeechRecognition; }', but here has type 'any'.
+hooks/use-voice-commands.tsx(10,5): error TS2717: Subsequent property declarations must have the same type.  Property 'SpeechRecognition' must be of type '{ new (): SpeechRecognition; prototype: SpeechRecognition; }', but here has type 'any'.
+middleware.ts(2,27): error TS2305: Module '"@clerk/nextjs/server"' has no exported member 'redirectToSignIn'.
+middleware.ts(7,12): error TS2339: Property 'userId' does not exist on type 'ClerkMiddlewareAuth'.
